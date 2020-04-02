@@ -11,3 +11,4 @@ runs:
     - "sync"
     - "--dir"
     - ${{ inputs.directory }}
+    - --dry-run
