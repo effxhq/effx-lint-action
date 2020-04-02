@@ -1,0 +1,13 @@
+name: "effx lint"
+description: "Lint effx config files."
+inputs:
+  directory:
+    description: "Directory for effx config files."
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - "sync"
+    - "--dir"
+    - ${{ inputs.directory }}
