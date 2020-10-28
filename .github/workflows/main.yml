@@ -1,7 +1,7 @@
 name: effx lint
 on: push
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -9,5 +9,3 @@ jobs:
         uses: effxhq/effx-lint-action@master
         with:
           directory: /github/workspace
-        env:
-          EFFX_API_KEY: ${{ secrets.EFFX_API_KEY }}
