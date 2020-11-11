@@ -16,14 +16,14 @@ jobs:
       - name: lint effx configuration files
         uses: effxhq/effx-lint-action@master
         with:
-          directory: /github/workspace
+          directory: ${GITHUB_WORKSPACE}
 ```
 
 ### Environment Variables
 
-📁 **`directory`** _(required)_ - The relative path to the directory containing configuration files you'd like linted.\
+📁 **`directory`** _(required)_ - The relative path to the directory containing configuration files you'd like linted.
 
-Setting `directory` to `/github/workspace` enables linting for **all** files with the suffix **`effx.yaml`** in your repo.
+Setting `directory` to `${GITHUB_WORKSPACE}` enables linting for **all** files with the suffix **`effx.yaml`** in your repo.
 
 ### Workflow
 
