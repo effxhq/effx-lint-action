@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: lint effx configuration files
-        uses: effxhq/effx-lint-action@master
+        uses: effxhq/effx-lint-action@v1
         with:
           directory: ${GITHUB_WORKSPACE}
 ```
